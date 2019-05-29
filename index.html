@@ -1,16 +1,42 @@
+<!DOCTYPE html>
 <html>
   <head>
     <title>Quick Fonts for prototyping</title>
-    <link rel="stylesheet" href="/css/aveni.cssr" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/avenir.css" />
     <link rel="stylesheet" href="/css/blokk.css" />
     <link rel="stylesheet" href="/css/blokk.css" />
     <link rel="stylesheet" href="/css/urw_geometric.css" />
 
     <style>
+      html {
+        /* max-width: 100vw;
+        width: 100vw; */
+      }
       body {
+        /* max-width: 100vw;
+        width: 100vw;
+        overflow: scroll; */
         font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
           Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
         color: #333;
+      }
+      pre {
+        background: #333;
+        color: #fff;
+        padding: 10px;
+        margin: 5px 0;
+        white-space: pre;
+        border-radius: 3px;
+        overflow: scroll;
+      }
+      h3 {
+        color: #666;
+      }
+      h5 {
+        color: #666;
+        text-transform: uppercase;
+        margin-bottom: 0;
       }
       .avenir {
         font-family: "Avenir" !important;
@@ -19,29 +45,49 @@
         font-family: "BLOKK" !important;
       }
       .urw-geometric {
-        font-family: "urw_geometricregular" !important;
+        font-family: "URW Geometric" !important;
       }
     </style>
   </head>
   <body>
-    <h1>Some good fonts for prototyping</h1>
+    <h1>Quick Fonts</h1>
+    <p>Some good fonts for prototyping. You can use this without downloading/installing the fonts - just load them directly from Github.</p>
+    <p>Note that most of them are commercial - you have to pay if you want to use them beyond just testing them out.</p>
     <hr />
-    <h1>Avenir</h1>
+    <h3>Avenir</h3>
     <div class="avenir">
       <h2>Hello World</h2>
-      <p>Hello World</p>
+      <p>There are many ways to say hello.</p>
+      <p><strong>You can say it boldly.</strong></p>
+      <p><i>You can say it pretentiously.</i></p>
     </div>
+    <h5>Load</h5>
+    <pre>&lt;link rel="stylesheet" href="https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/css/avenir.css" /&gt;</pre>
+    <h5>Use</h5>
+    <pre>&lt;style> p { font-family: "Avenir"; } &lt;/style></pre>
     <hr />
-    <h1>Blokk</h1>
+    <h3>Blokk</h3>
     <div class="blokk">
       <h2>Hello World</h2>
-      <p>Hello World</p>
+      <p>There are many ways to say hello.</p>
+      <p><strong>You can say it boldly.</strong></p>
+      <p><i>You can say it pretentiously.</i></p>
     </div>
+    <h5>Load</h5>
+    <pre>&lt;link rel="stylesheet" href="https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/css/avenir.css" /&gt;</pre>
+    <h5>Use</h5>
+    <pre>Use: &lt;style> p { font-family: "BLOKK"; } &lt;/style></pre>
     <hr />
-    <h1>URW Geometric</h1>
+    <h3>URW Geometric</h3>
     <div class="urw-geometric">
       <h2>Hello World</h2>
-      <p>Hello World</p>
+      <p>There are many ways to say hello.</p>
+      <p><strong>You can say it boldly.</strong></p>
+      <p><i>You can say it pretentiously.</i></p>
     </div>
+    <h5>Load</h5>
+    <pre>&lt;link rel="stylesheet" href="https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/css/avenir.css" /&gt;</pre>
+    <h5>Use</h5>
+    <pre>&lt;style> p { font-family: "URW Geometric"; } &lt;/style></pre>
   </body>
 </html>
