@@ -1,0 +1,70 @@
+
+
+@font-face {
+  font-family: 'BLOKK';
+  src: url("../fonts/BLOKKNeue-Regular.eot");
+  src: url("../fonts/BLOKKNeue-Regular.eot?#iefix") format("embedded-opentype"),
+       url("../fonts/BLOKKNeue-Regular.woff2") format("woff2"),
+       url("../fonts/BLOKKNeue-Regular.woff") format("woff"),
+       url("../fonts/BLOKKNeue-Regular.otf") format("opentype"),
+       url("../fonts/BLOKKNeue-Regular.ttf") format("truetype"),
+       url("../fonts/BLOKKNeue-Regular.svg#BLOKKRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'berlingske_serifextrabold';
+src: url("../fonts/berlingskeserif-xbd-webfont.woff2") format("woff2"), url("../fonts/berlingskeserif-xbd-webfont.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'berlingske_serif_stencidemiBd';
+src: url("../fonts/berlingskeserifstencil-dbd-webfont.woff2") format("woff2"), url("../fonts/berlingskeserifstencil-dbd-webfont.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'urw_geometricmedium';
+src: url("../fonts/urw_-_urwgeometric-medium-webfont.woff2") format("woff2"), url("../fonts/urw_-_urwgeometric-medium-webfont.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'urw_geometricmedium_oblique';
+src: url("../fonts/urw_-_urwgeometric-mediumoblique-webfont.woff2") format("woff2"), url("../fonts/urw_-_urwgeometric-mediumoblique-webfont.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'urw_geometricregular';
+src: url("../fonts/urw_-_urwgeometric-regular-webfont.woff2") format("woff2"), url("../fonts/urw_-_urwgeometric-regular-webfont.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'urw_geometricregular_oblique';
+src: url("../fonts/urw_-_urwgeometric-regularoblique-webfont.woff2") format("woff2"), url("../fonts/urw_-_urwgeometric-regularoblique-webfont.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'urw_geometricsemi_bold';
+src: url("../fonts/urw_-_urwgeometric-semibold-webfont.woff2") format("woff2"), url("../fonts/urw_-_urwgeometric-semibold-webfont.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'urw_geometricSBdOb';
+src: url("../fonts/urw_-_urwgeometric-semiboldoblique-webfont.woff2") format("woff2"), url("../fonts/urw_-_urwgeometric-semiboldoblique-webfont.woff") format("woff");
+font-weight: normal;
+font-style: normal;
+}
