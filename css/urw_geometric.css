@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "urw_geometricmedium";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-medium-webfont.woff2") format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-medium-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "urw_geometricmedium_oblique";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-mediumoblique-webfont.woff2")
+      format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-mediumoblique-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "urw_geometricregular";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-regular-webfont.woff2") format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "urw_geometricregular_oblique";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-regularoblique-webfont.woff2")
+      format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-regularoblique-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "urw_geometricsemi_bold";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-semibold-webfont.woff2") format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-semibold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "urw_geometricSBdOb";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-semiboldoblique-webfont.woff2")
+      format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-fonts/master/fonts/urw_-_urwgeometric-semiboldoblique-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
