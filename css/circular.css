@@ -10,14 +10,14 @@
   src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-BookItalic.woff2")
       format("woff2"),
     url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-BookItalic.woff") format("woff");
-  font-weight: 200;
+  font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Circular";
   src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Medium.woff2") format("woff2"),
     url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Medium.woff") format("woff");
-  font-weight: 400;
+  font-weight: 500;
   font-style: normal;
 }
 @font-face {
@@ -25,7 +25,7 @@
   src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-MediumItalic.woff2")
       format("woff2"),
     url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-MediumItalic.woff") format("woff");
-  font-weight: 400;
+  font-weight: 500;
   font-style: italic;
 }
 @font-face {
