@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'URW Geometric';
   font-style: normal;
-  font-weight: 200;
+  font-weight: 400;
   src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/urw_geometric/urw_-_urwgeometric-regular-webfont.woff2") format("woff2"),
     url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/urw_geometric/urw_-_urwgeometric-regular-webfont.woff") format("woff");
 }
@@ -9,7 +9,7 @@
 @font-face {
   font-family: 'URW Geometric';
   font-style: italic;
-  font-weight: 200;
+  font-weight: 400;
   src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/urw_geometric/urw_-_urwgeometric-regularoblique-webfont.woff2")
       format("woff2"),
     url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/urw_geometric/urw_-_urwgeometric-regularoblique-webfont.woff")
@@ -19,7 +19,7 @@
 @font-face {
   font-family: 'URW Geometric';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 500;
   src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/urw_geometric/urw_-_urwgeometric-medium-webfont.woff2") format("woff2"),
     url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/urw_geometric/urw_-_urwgeometric-medium-webfont.woff") format("woff");
 }
@@ -27,7 +27,7 @@
 @font-face {
   font-family: 'URW Geometric';
   font-style: italic;
-  font-weight: 400;
+  font-weight: 500;
   src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/urw_geometric/urw_-_urwgeometric-mediumoblique-webfont.woff2")
       format("woff2"),
     url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/urw_geometric/urw_-_urwgeometric-mediumoblique-webfont.woff") format("woff");
