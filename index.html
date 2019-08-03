@@ -2,7 +2,13 @@
 <html>
   <head>
     <title>Quick, Font!</title>
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css"
+    />
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
     <link rel="stylesheet" href="/css/avenir.css" />
     <link rel="stylesheet" href="/css/blokk.css" />
     <link rel="stylesheet" href="/css/circular.css" />
@@ -12,9 +18,9 @@
 
     <style>
       body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-        background-color: #fffff8;
+        font-family: "Circular", -apple-system, BlinkMacSystemFont, "Segoe UI",
+          Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+        background-color: #fdfdfd;
         color: #111;
       }
       pre {
@@ -34,6 +40,12 @@
         text-transform: uppercase;
         margin-bottom: 0;
       }
+      .has-soft-shadow {
+        box-shadow: 0 5px 10px 0 rgba(0, 64, 128, 0.05);
+      }
+      .has-border-none {
+        border: none;
+      }
       .avenir {
         font-family: "Avenir" !important;
       }
@@ -52,113 +64,105 @@
       .urw-geometric {
         font-family: "URW Geometric" !important;
       }
+
+      .FontBlock {
+        height: 100%;
+      }
+      .FontBlock .content h1,
+      .FontBlock .content h2,
+      .FontBlock .content h3 {
+        margin: 5px 0;
+      }
     </style>
   </head>
   <body>
-    <h1>Quick, Font!</h1>
-    <p>
-      Some good fonts for prototyping or snazzing up an internal website
-      (without having to go through the pain of downloading or installing). Just
-      load them directly from Github using the instructions provided.
-    </p>
-    <p>
-      <small>
-        DISCLAIMER<br />
-        Many of these fonts are commercial - you have to pay if you want to use
-        them beyond just testing them out. I take no responsibility or liability
-        if you use these on a commercial project. I'm likely breaking some rules
-        even with this site, however I hope that the owners of the fonts will
-        see this as free promotion and advertising. If you are an owner of one
-        of these fonts and would like me to remove it, please open an issue
-        here:
-        <a href="https://github.com/kiwicopple/quick-font/issues"
-          >https://github.com/kiwicopple/quick-font/issues</a
+    <nav
+      class="navbar has-soft-shadow"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand">
+        <a class="navbar-item" href="/">
+          <img src="/img/logo.svg" alt="Quick, Font!" />
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger burger"
+          aria-label="menu"
+          aria-expanded="false"
+          data-target="navbarBasicExample"
         >
-      </small>
-    </p>
-    <hr />
-    <h3>Avenir</h3>
-    <div class="avenir">
-      <h2>Hello World</h2>
-      <p>There are many ways to say hello.</p>
-      <p><strong>You can say it boldly.</strong></p>
-      <p><i>You can say it pretentiously.</i></p>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div class="navbar-menu">
+        <div class="navbar-start"></div>
+
+        <div class="navbar-end">
+          <a class="navbar-item">
+            FAQ
+          </a>
+          <div class="navbar-item">
+            <div class="buttons">
+              <a class="button is-primary">
+                <strong>Sign up</strong>
+              </a>
+              <a class="button is-light">
+                Log in
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <div class="hero-body">
+        <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h2 class="title has-text-danger is-1">
+              Find your font.
+            </h2>
+            <p class="subtitle">
+              Try out different fonts without the pain of downloading and
+              installing.
+            </p>
+          </div>
+          <!-- <div class="column">
+            Illustration
+          </div> -->
+        </div>
+      </div>
+      </div>
     </div>
-    <h5>Load</h5>
-    <pre>
-&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/avenir.css" /&gt;</pre
-    >
-    <h5>Use</h5>
-    <pre>&lt;style> p { font-family: "Avenir"; } &lt;/style></pre>
-    <hr />
-    <h3>Blokk</h3>
-    <div class="blokk">
-      <h2>Hello World</h2>
-      <p>There are many ways to say hello.</p>
-      <p><strong>You can say it boldly.</strong></p>
-      <p><i>You can say it pretentiously.</i></p>
+
+    <div class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-6">
+            <div class="FontBlock box has-soft-shadow has-border-none">
+              <h3>Avenir</h3>
+              <div class="content avenir">
+                <h1>Heading</h1>
+                <h2>Heading</h2>
+                <h3>Heading</h3>
+                <p>A group of parrots is called a pandemonium.</p>
+              </div>
+              <h5>Load</h5>
+              <pre>
+  &lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/avenir.css" /&gt;</pre
+              >
+              <h5>Use</h5>
+              <pre>&lt;style> p { font-family: "Avenir"; } &lt;/style></pre>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <h5>Load</h5>
-    <pre>
-&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/blokk.css" /&gt;</pre
-    >
-    <h5>Use</h5>
-    <pre>Use: &lt;style> p { font-family: "BLOKK"; } &lt;/style></pre>
-    <hr />
-    <h3>Circular</h3>
-    <div class="circular">
-      <h2>Hello World</h2>
-      <p>There are many ways to say hello.</p>
-      <p><strong>You can say it boldly.</strong></p>
-      <p><i>You can say it pretentiously.</i></p>
-    </div>
-    <h5>Load</h5>
-    <pre>
-&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/circular.css" /&gt;</pre
-    >
-    <h5>Use</h5>
-    <pre>Use: &lt;style> p { font-family: "Circular"; } &lt;/style></pre>
-    <hr />
-    <h3>Manrope</h3>
-    <div class="manrope">
-      <h2>Hello World</h2>
-      <p>There are many ways to say hello.</p>
-      <p><strong>You can say it boldly.</strong></p>
-      <p><i>You can say it pretentiously.</i></p>
-    </div>
-    <h5>Load</h5>
-    <pre>
-&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/manrope.css" /&gt;</pre
-    >
-    <h5>Use</h5>
-    <pre>&lt;style> p { font-family: "Manrope"; } &lt;/style></pre>
-    <hr />
-    <h3>Modern Era</h3>
-    <div class="modern-era">
-      <h2>Hello World</h2>
-      <p>There are many ways to say hello.</p>
-      <p><strong>You can say it boldly.</strong></p>
-      <p><i>You can say it pretentiously.</i></p>
-    </div>
-    <h5>Load</h5>
-    <pre>
-&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/modern_era.css" /&gt;</pre
-    >
-    <h5>Use</h5>
-    <pre>&lt;style> p { font-family: "Modern Era"; } &lt;/style></pre>
-    <hr />
-    <h3>URW Geometric</h3>
-    <div class="urw-geometric">
-      <h2>Hello World</h2>
-      <p>There are many ways to say hello.</p>
-      <p><strong>You can say it boldly.</strong></p>
-      <p><i>You can say it pretentiously.</i></p>
-    </div>
-    <h5>Load</h5>
-    <pre>
-&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/urw_geometric.css" /&gt;</pre
-    >
-    <h5>Use</h5>
-    <pre>&lt;style> p { font-family: "URW Geometric"; } &lt;/style></pre>
   </body>
 </html>

@@ -1,0 +1,23 @@
+{
+  "name": "quick-font",
+  "version": "0.0.1",
+  "description": "Try fonts without installing",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kiwicopple/quick-font.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kiwicopple/quick-font/issues"
+  },
+  "homepage": "https://github.com/kiwicopple/quick-font#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.1.0"
+  }
+}
