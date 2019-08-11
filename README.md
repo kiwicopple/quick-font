@@ -4,8 +4,10 @@
 
 ## Contributing
 
-### Building this site
+1. Clone this site
+2. Run `npm install`
 
 ```bash
-python -m SimpleHTTPServer 3000
+npm run dev     # starts a development server
+npm run build   # builds a production site into "_site"
 ```
