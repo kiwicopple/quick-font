@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Circular";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Book.woff2") format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-BookItalic.woff2")
+      format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-BookItalic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Medium.woff2") format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-MediumItalic.woff2")
+      format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Bold.woff2") format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: 600;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-BoldItalic.woff2")
+      format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-BoldItalic.woff") format("woff");
+  font-style: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Black.woff2") format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-Black.woff") format("woff");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Circular";
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-BlackItalic.woff2")
+      format("woff2"),
+    url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/circular/CircularStd-BlackItalic.woff") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}

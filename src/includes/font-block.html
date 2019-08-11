@@ -1,0 +1,41 @@
+<div class="column is-6">
+  <div id="@@id" class="FontBlock box has-soft-shadow has-border-none">
+    <h3 class="heading">@@title</h3>
+    <div class="tabs is-small is-right">
+      <ul>
+        <li tabName="view" class="is-active">
+          <a onclick="document.toggleTab('@@id', 'view')">View</a>
+        </li>
+        <li tabName="use"><a onclick="document.toggleTab('@@id', 'use')">Use</a></li>
+      </ul>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="view" class="tab ">
+      <div class="content" style="@@styles">
+        <h1 contenteditable="true">Heading 1</h1>
+        <h2 contenteditable="true">Heading 2</h2>
+        <h3 contenteditable="true">Heading 3</h3>
+        <p contenteditable="true">
+          A group of parrots is called a pandemonium. 
+          A group of porcupines is called a prickle. 
+          A group of crabs is called a consortium.
+          A group of sharks is called a shiver.
+        </p>
+      </div>
+      <div>
+        <span class="tag">License: @@license</span>
+      </div>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="use" class="tab is-hidden">
+      <h5 class="title is-5 m-sm m-t-md">Load</h5>
+      <pre class="code">
+&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/@@filename" /&gt;</pre
+      >
+      <h5 class="title is-5 m-sm m-t-md">Use</h5>
+      <pre>&lt;style> p { @@styles } &lt;/style></pre>
+    </div>
+  </div>
+</div>

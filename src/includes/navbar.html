@@ -1,0 +1,38 @@
+<nav class="navbar has-soft-shadow" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/assets/img/logo.svg" alt="Quick, Font!" />
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger burger navbar-item has-text-grey-light is-hidden-desktop"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="mainNav"
+      >
+      •••
+    </a>
+  </div>
+
+  <div class="navbar-menu" id="mainNav">
+    <div class="navbar-start"></div>
+
+    <div class="navbar-end">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link is-arrowless has-text-grey-light is-hidden-touch">
+          •••
+        </a>
+
+        <div class="navbar-dropdown is-right is-boxed m-r-sm">
+          <a class="navbar-item" onclick="document.showModal('AboutModal')">
+            About
+          </a>
+          <a class="navbar-item" onclick="document.showModal('DisclaimerModal')">
+            Disclaimer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>

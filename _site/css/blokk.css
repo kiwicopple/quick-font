@@ -1,0 +1,13 @@
+
+@font-face {
+  font-family: 'BLOKK';
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/blokk/BLOKKNeue-Regular.eot");
+  src: url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/blokk/BLOKKNeue-Regular.eot?#iefix") format("embedded-opentype"),
+       url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/blokk/BLOKKNeue-Regular.woff2") format("woff2"),
+       url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/blokk/BLOKKNeue-Regular.woff") format("woff"),
+       url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/blokk/BLOKKNeue-Regular.otf") format("opentype"),
+       url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/blokk/BLOKKNeue-Regular.ttf") format("truetype"),
+       url("https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/blokk/BLOKKNeue-Regular.svg#BLOKKRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}

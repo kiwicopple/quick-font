@@ -1,0 +1,29 @@
+
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 200;
+  src: url(https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/avenir/AvenirLight.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/avenir/AvenirMedium.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 600;
+  src: url(https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/avenir/AvenirSemiBold.woff2)
+    format('woff2');
+}
+@font-face {
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 800;
+  src: url(https://raw.githubusercontent.com/kiwicopple/quick-font/master/fonts/avenir/AvenirBold.woff2)
+    format('woff2');
+}
