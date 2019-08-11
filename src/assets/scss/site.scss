@@ -87,7 +87,7 @@ body {
     h1,
     h2,
     h3 {
-      margin: 3px 0;
+      margin: 0px 0 10px 0;
     }
     textarea {
       width: 100%;
@@ -109,4 +109,14 @@ body {
 
 .is-hidden {
   display: none;
+}
+
+.hero-body .container {
+  max-width: 1000px;
+  
+}
+@media only screen and (max-width: 769px) {
+  .hero-body .container .text-column {
+    text-align: center;
+  }
 }
