@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quick, Font!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/site.min.css" />
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+    <link rel="stylesheet" href="/css/avenir.css" />
+    <link rel="stylesheet" href="/css/blokk.css" />
+    <link rel="stylesheet" href="/css/circular.css" />
+    <link rel="stylesheet" href="/css/manrope.css" />
+    <link rel="stylesheet" href="/css/modern_era.css" />
+    <link rel="stylesheet" href="/css/urw_geometric.css" />
+    <script type="text/javascript" src="/assets/js/main.bundle.js"></script>
+  </head>
+  <body>
+    
+
+    @@include('../includes/navbar.html')
+    @@include('../includes/modals.html')
+
+    @@include('../includes/hero.html')
+
+    <div class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          @@loop('../includes/font-block.html', [
+            {
+              "id": "Avenir", 
+              "title": "Avenir", 
+              "styles": "font-family: 'Avenir';", 
+              "filename": "avenir.css",
+              "license": "Unknown",
+              "purchase": ""
+            },
+            { 
+              "id": "Blokk", 
+              "title": "Blokk", 
+              "styles": "font-family: 'BLOKK';", 
+              "filename": "blokk.css",
+              "license": "Unknown"
+            },
+            { 
+              "id": "Circular", 
+              "title": "Circular", 
+              "styles": "font-family: 'Circular';", 
+              "filename": "circular.css",
+              "license": "Unknown"
+            },
+            { 
+              "id": "Manrope", 
+              "title": "Manrope", 
+              "styles": "font-family: 'Manrope';", 
+              "filename": "manrope.css",
+              "license": "Unknown"
+            },
+            { 
+              "id": "ModernEra", 
+              "title": "Modern Era", 
+              "styles": "font-family: 'Modern Era';", 
+              "filename": "modern_era.css",
+              "license": "Unknown"
+            },
+            { 
+              "id": "UrwGeometric", 
+              "title": "URW Geometric", 
+              "styles": "font-family: 'URW Geometric';", 
+              "filename": "urw_geometric.css",
+              "license": "Unknown"
+            }
+          ])
+        </div>
+      </div>
+    </div>
+
+    @@include('../includes/footer.html')
+  </body>
+</html>

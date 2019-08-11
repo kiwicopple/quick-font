@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quick, Font!</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/assets/css/site.min.css" />
+    <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
+    <link rel="stylesheet" href="/css/avenir.css" />
+    <link rel="stylesheet" href="/css/blokk.css" />
+    <link rel="stylesheet" href="/css/circular.css" />
+    <link rel="stylesheet" href="/css/manrope.css" />
+    <link rel="stylesheet" href="/css/modern_era.css" />
+    <link rel="stylesheet" href="/css/urw_geometric.css" />
+    <script type="text/javascript" src="/assets/js/main.bundle.js"></script>
+  </head>
+  <body>
+    
+
+    <nav class="navbar has-soft-shadow" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/">
+      <img src="/assets/img/logo.svg" alt="Quick, Font!" />
+    </a>
+
+    <a
+      role="button"
+      class="navbar-burger burger navbar-item has-text-grey-light is-hidden-desktop"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="mainNav"
+      >
+      •••
+    </a>
+  </div>
+
+  <div class="navbar-menu" id="mainNav">
+    <div class="navbar-start"></div>
+
+    <div class="navbar-end">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link is-arrowless has-text-grey-light is-hidden-touch">
+          •••
+        </a>
+
+        <div class="navbar-dropdown is-right is-boxed m-r-sm">
+          <a class="navbar-item" onclick="document.showModal('AboutModal')">
+            About
+          </a>
+          <a class="navbar-item" onclick="document.showModal('DisclaimerModal')">
+            Disclaimer
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+    <div id="AboutModal" class="modal">
+  <div class="modal-background" onclick="document.closeModals()"></div>
+  <div class="modal-content">
+    <div class="box content">
+      <h3 class="title is 3">About</h3>
+      <p>
+        With <span class="is-italic is-bold">Quick, Font!</span>
+        you can try out fonts on your own website without having to download and install the
+        font. It is similar to Google Fonts, except that I will never track your usage. All fonts
+        are served directly from Github (although the stylesheets are passed through a proxy to
+        ensure the correct Content-Type headers).
+      </p>
+      <p>
+        I also include non-free fonts here so that they can be trialled on your site. Please see the
+        disclaimer!
+      </p>
+    </div>
+  </div>
+  <button class="modal-close is-large" onclick="document.closeModals()"></button>
+</div>
+
+<div id="DisclaimerModal" class="modal">
+  <div class="modal-background" onclick="document.closeModals()"></div>
+  <div class="modal-content">
+    <div class="box content">
+      <h3 class="title is 3">Disclaimer</h3>
+      <p>
+        Many of these fonts are commercial - you have to pay if you want to use them beyond just
+        testing them out. I take no responsibility or liability if you use these in a commercial
+        project. I'm likely breaking some rules with this site, however I hope that the owners of
+        the fonts will see this as free promotion and advertising. If you are an owner of one of
+        these fonts and would like me to remove it, please
+        <a href="https://github.com/kiwicopple/quick-font/issues">
+          open an issue.
+        </a>
+        I do not earn anything from this site, it is simply a tool to make developing and
+        prototyping much quicker.
+      </p>
+    </div>
+  </div>
+  <button class="modal-close is-large" onclick="document.closeModals()"></button>
+</div>
+
+
+    <div class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="column">
+          <h2 class="title has-text-danger is-1">
+            Find your font.
+          </h2>
+          <p class="subtitle">
+            Try out different fonts without the pain of downloading and
+            installing.
+          </p>
+        </div>
+        <!-- <div class="column">
+              Illustration
+            </div> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-6">
+  <div id="Avenir" class="FontBlock box has-soft-shadow has-border-none">
+    <h3 class="heading">Avenir</h3>
+    <div class="tabs is-small is-right">
+      <ul>
+        <li tabName="view" class="is-active">
+          <a onclick="document.toggleTab('Avenir', 'view')">View</a>
+        </li>
+        <li tabName="use"><a onclick="document.toggleTab('Avenir', 'use')">Use</a></li>
+      </ul>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="view" class="tab ">
+      <div class="content" style="font-family: 'Avenir';">
+        <h1 contenteditable="true">Heading 1</h1>
+        <h2 contenteditable="true">Heading 2</h2>
+        <h3 contenteditable="true">Heading 3</h3>
+        <p contenteditable="true">
+          A group of parrots is called a pandemonium. 
+          A group of porcupines is called a prickle. 
+          A group of crabs is called a consortium.
+          A group of sharks is called a shiver.
+        </p>
+      </div>
+      <div>
+        <span class="tag">License: Unknown</span>
+      </div>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="use" class="tab is-hidden">
+      <h5 class="title is-5 m-sm m-t-md">Load</h5>
+      <pre class="code">
+&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/avenir.css" /&gt;</pre
+      >
+      <h5 class="title is-5 m-sm m-t-md">Use</h5>
+      <pre>&lt;style> p { font-family: 'Avenir'; } &lt;/style></pre>
+    </div>
+  </div>
+</div>
+<div class="column is-6">
+  <div id="Blokk" class="FontBlock box has-soft-shadow has-border-none">
+    <h3 class="heading">Blokk</h3>
+    <div class="tabs is-small is-right">
+      <ul>
+        <li tabName="view" class="is-active">
+          <a onclick="document.toggleTab('Blokk', 'view')">View</a>
+        </li>
+        <li tabName="use"><a onclick="document.toggleTab('Blokk', 'use')">Use</a></li>
+      </ul>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="view" class="tab ">
+      <div class="content" style="font-family: 'BLOKK';">
+        <h1 contenteditable="true">Heading 1</h1>
+        <h2 contenteditable="true">Heading 2</h2>
+        <h3 contenteditable="true">Heading 3</h3>
+        <p contenteditable="true">
+          A group of parrots is called a pandemonium. 
+          A group of porcupines is called a prickle. 
+          A group of crabs is called a consortium.
+          A group of sharks is called a shiver.
+        </p>
+      </div>
+      <div>
+        <span class="tag">License: Unknown</span>
+      </div>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="use" class="tab is-hidden">
+      <h5 class="title is-5 m-sm m-t-md">Load</h5>
+      <pre class="code">
+&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/blokk.css" /&gt;</pre
+      >
+      <h5 class="title is-5 m-sm m-t-md">Use</h5>
+      <pre>&lt;style> p { font-family: 'BLOKK'; } &lt;/style></pre>
+    </div>
+  </div>
+</div>
+<div class="column is-6">
+  <div id="Circular" class="FontBlock box has-soft-shadow has-border-none">
+    <h3 class="heading">Circular</h3>
+    <div class="tabs is-small is-right">
+      <ul>
+        <li tabName="view" class="is-active">
+          <a onclick="document.toggleTab('Circular', 'view')">View</a>
+        </li>
+        <li tabName="use"><a onclick="document.toggleTab('Circular', 'use')">Use</a></li>
+      </ul>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="view" class="tab ">
+      <div class="content" style="font-family: 'Circular';">
+        <h1 contenteditable="true">Heading 1</h1>
+        <h2 contenteditable="true">Heading 2</h2>
+        <h3 contenteditable="true">Heading 3</h3>
+        <p contenteditable="true">
+          A group of parrots is called a pandemonium. 
+          A group of porcupines is called a prickle. 
+          A group of crabs is called a consortium.
+          A group of sharks is called a shiver.
+        </p>
+      </div>
+      <div>
+        <span class="tag">License: Unknown</span>
+      </div>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="use" class="tab is-hidden">
+      <h5 class="title is-5 m-sm m-t-md">Load</h5>
+      <pre class="code">
+&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/circular.css" /&gt;</pre
+      >
+      <h5 class="title is-5 m-sm m-t-md">Use</h5>
+      <pre>&lt;style> p { font-family: 'Circular'; } &lt;/style></pre>
+    </div>
+  </div>
+</div>
+<div class="column is-6">
+  <div id="Manrope" class="FontBlock box has-soft-shadow has-border-none">
+    <h3 class="heading">Manrope</h3>
+    <div class="tabs is-small is-right">
+      <ul>
+        <li tabName="view" class="is-active">
+          <a onclick="document.toggleTab('Manrope', 'view')">View</a>
+        </li>
+        <li tabName="use"><a onclick="document.toggleTab('Manrope', 'use')">Use</a></li>
+      </ul>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="view" class="tab ">
+      <div class="content" style="font-family: 'Manrope';">
+        <h1 contenteditable="true">Heading 1</h1>
+        <h2 contenteditable="true">Heading 2</h2>
+        <h3 contenteditable="true">Heading 3</h3>
+        <p contenteditable="true">
+          A group of parrots is called a pandemonium. 
+          A group of porcupines is called a prickle. 
+          A group of crabs is called a consortium.
+          A group of sharks is called a shiver.
+        </p>
+      </div>
+      <div>
+        <span class="tag">License: Unknown</span>
+      </div>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="use" class="tab is-hidden">
+      <h5 class="title is-5 m-sm m-t-md">Load</h5>
+      <pre class="code">
+&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/manrope.css" /&gt;</pre
+      >
+      <h5 class="title is-5 m-sm m-t-md">Use</h5>
+      <pre>&lt;style> p { font-family: 'Manrope'; } &lt;/style></pre>
+    </div>
+  </div>
+</div>
+<div class="column is-6">
+  <div id="ModernEra" class="FontBlock box has-soft-shadow has-border-none">
+    <h3 class="heading">Modern Era</h3>
+    <div class="tabs is-small is-right">
+      <ul>
+        <li tabName="view" class="is-active">
+          <a onclick="document.toggleTab('ModernEra', 'view')">View</a>
+        </li>
+        <li tabName="use"><a onclick="document.toggleTab('ModernEra', 'use')">Use</a></li>
+      </ul>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="view" class="tab ">
+      <div class="content" style="font-family: 'Modern Era';">
+        <h1 contenteditable="true">Heading 1</h1>
+        <h2 contenteditable="true">Heading 2</h2>
+        <h3 contenteditable="true">Heading 3</h3>
+        <p contenteditable="true">
+          A group of parrots is called a pandemonium. 
+          A group of porcupines is called a prickle. 
+          A group of crabs is called a consortium.
+          A group of sharks is called a shiver.
+        </p>
+      </div>
+      <div>
+        <span class="tag">License: Unknown</span>
+      </div>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="use" class="tab is-hidden">
+      <h5 class="title is-5 m-sm m-t-md">Load</h5>
+      <pre class="code">
+&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/modern_era.css" /&gt;</pre
+      >
+      <h5 class="title is-5 m-sm m-t-md">Use</h5>
+      <pre>&lt;style> p { font-family: 'Modern Era'; } &lt;/style></pre>
+    </div>
+  </div>
+</div>
+<div class="column is-6">
+  <div id="UrwGeometric" class="FontBlock box has-soft-shadow has-border-none">
+    <h3 class="heading">URW Geometric</h3>
+    <div class="tabs is-small is-right">
+      <ul>
+        <li tabName="view" class="is-active">
+          <a onclick="document.toggleTab('UrwGeometric', 'view')">View</a>
+        </li>
+        <li tabName="use"><a onclick="document.toggleTab('UrwGeometric', 'use')">Use</a></li>
+      </ul>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="view" class="tab ">
+      <div class="content" style="font-family: 'URW Geometric';">
+        <h1 contenteditable="true">Heading 1</h1>
+        <h2 contenteditable="true">Heading 2</h2>
+        <h3 contenteditable="true">Heading 3</h3>
+        <p contenteditable="true">
+          A group of parrots is called a pandemonium. 
+          A group of porcupines is called a prickle. 
+          A group of crabs is called a consortium.
+          A group of sharks is called a shiver.
+        </p>
+      </div>
+      <div>
+        <span class="tag">License: Unknown</span>
+      </div>
+    </div>
+
+    <!-- Tab -->
+    <div tabName="use" class="tab is-hidden">
+      <h5 class="title is-5 m-sm m-t-md">Load</h5>
+      <pre class="code">
+&lt;link rel="stylesheet" href="https://combinatronics.com/kiwicopple/quick-font/master/css/urw_geometric.css" /&gt;</pre
+      >
+      <h5 class="title is-5 m-sm m-t-md">Use</h5>
+      <pre>&lt;style> p { font-family: 'URW Geometric'; } &lt;/style></pre>
+    </div>
+  </div>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+    <div class="colimns">
+      <div class="column has-text-centered">
+          <p >
+            <img src="/assets/img/logo.svg" alt="Quick, Font!" width="200" />
+          </p>
+          <p>
+            <a href="https://github.com/kiwicopple/quick-font">Github</a>
+          </p>
+        </div>
+    </div>
+  </footer>
+  </body>
+</html>
