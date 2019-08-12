@@ -96,6 +96,8 @@ body {
 
 .FontBlock {
   height: 100%;
+  z-index: 3;
+  position: relative;
   .content {
     h1,
     h2,
@@ -117,6 +119,9 @@ body {
     color: #fff;
     font-size: 0.8rem;
   }
+  .tabs {
+    z-index: 3;
+  }
 }
 
 .is-hidden {
@@ -135,6 +140,7 @@ body {
 .sticky-top {
   position: sticky;
   top: 0;
+  z-index: 99;
 }
 
 .modal-content {
