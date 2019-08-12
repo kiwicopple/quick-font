@@ -84,6 +84,15 @@ body {
 .has-border-none {
   border: none;
 }
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: $primary;
+}
+::selection {
+  color: white;
+  background: $primary;
+}
+
 .FontBlock {
   height: 100%;
   .content {
