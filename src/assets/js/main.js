@@ -1,4 +1,41 @@
 document.addEventListener('DOMContentLoaded', function(event) {
+  document.filterString = ''
+  document.fontStyle = null
+  document.license = null
+
+  var filterFonts = function() {
+    // Check if there are any filters
+
+    let noFilters = !document.filterString.length && !document.fontStyle && !document.license
+    if (noFilters) return showAllFonts()
+
+    // If there are filters, apply them
+    let blocks = document.querySelectorAll('.FontBlockCol')
+    let passFilters = [...blocks]
+    if (document.license) {
+      passFilters = passFilters.filter(x => x.getAttribute('license') == document.license)
+    }
+    if (document.fontStyle) {
+      passFilters = passFilters.filter(x => x.getAttribute('fontStyle') == document.fontStyle)
+    }
+    if (document.filterString.length) {
+      let reg = new RegExp(document.filterString, 'gi')
+      passFilters = passFilters.filter(x => x.getAttribute('filterString').search(reg) >= 0)
+    }
+    let passingIds = passFilters.map(x => x.getAttribute('id'))
+    Array.prototype.forEach.call(blocks, function(el) {
+      let id = el.getAttribute('id')
+      if (passingIds.includes(id)) el.classList.remove('is-hidden')
+      else el.classList.add('is-hidden')
+    })
+  }
+  var showAllFonts = function() {
+    let blocks = document.querySelectorAll('.FontBlockCol')
+    Array.prototype.forEach.call(blocks, function(el) {
+      el.classList.remove('is-hidden')
+    })
+  }
+
   document.toggleTab = function(id, tabName) {
     // let block = document.getElementById(id)
     let tabHandles = document.querySelectorAll(`#${id} .tabs li`)
@@ -30,26 +67,38 @@ document.addEventListener('DOMContentLoaded', function(event) {
       el.classList.add('is-active')
     })
   }
-  var filterFonts = function(e) {
-    let f = e.target.value
-    let blocks = document.querySelectorAll('.FontBlockCol')
-    if (f.length) {
-      let reg = new RegExp(f, 'gi')
-      Array.prototype.forEach.call(blocks, function(el) {
-        let v = el.getAttribute('filterString')
-        if (v.search(reg) >= 0) el.classList.remove('is-hidden')
-        else el.classList.add('is-hidden')
-      })
-    } else {
-      Array.prototype.forEach.call(blocks, function(el) {
-        el.classList.remove('is-hidden')
-      })
-    }
+  document.onFontStyleSelected = function(el) {
+    let fontStyle = el.getAttribute('fontStyle')
+    let buttons = document.querySelectorAll('.font-style-button')
+    if (document.fontStyle !== fontStyle) document.fontStyle = fontStyle
+    else document.fontStyle = null // toggle off to show all
+    Array.prototype.forEach.call(buttons, function(element) {
+      let styleAttr = element.getAttribute('fontStyle')
+      if (styleAttr === document.fontStyle) element.classList.add('is-primary')
+      else element.classList.remove('is-primary')
+    })
+    filterFonts()
+  }
+  document.onLicenseSelected = function(el) {
+    let license = el.getAttribute('license')
+    let buttons = document.querySelectorAll('.license-button')
+    if (document.license !== license) document.license = license
+    else document.license = null // toggle off to show all
+    Array.prototype.forEach.call(buttons, function(element) {
+      let styleAttr = element.getAttribute('license')
+      if (styleAttr === document.license) element.classList.add('is-primary')
+      else element.classList.remove('is-primary')
+    })
+    filterFonts()
   }
 
   // Attach Listeners
   let filterInput = document.querySelector('#FilterInput')
-  if (filterInput) filterInput.addEventListener('keyup', filterFonts)
+  if (filterInput)
+    filterInput.addEventListener('keyup', function(e) {
+      document.filterString = e.target.value
+      filterFonts()
+    })
 })
 
 document.addEventListener('DOMContentLoaded', () => {

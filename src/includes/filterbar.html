@@ -12,12 +12,32 @@
     </div>
     <div class="level-item" style="justify-content: flex-start;">
       <div class="buttons has-addons m-r-sm" style="margin-bottom: -.5rem;">
-        <span class="button is-small">Serif</span>
-        <span class="button is-small">Sans-serif</span>
+        <span
+          class="font-style-button button is-small"
+          onclick="document.onFontStyleSelected(this)"
+          fontStyle="SERIF"
+          >Serif</span
+        >
+        <span
+          class="font-style-button button is-small"
+          onclick="document.onFontStyleSelected(this)"
+          fontStyle="SANS_SERIF"
+          >Sans-serif</span
+        >
       </div>
       <div class="buttons has-addons">
-        <span class="button is-small">Free</span>
-        <span class="button is-small">Commercial</span>
+        <span
+          class="license-button button is-small"
+          onclick="document.onLicenseSelected(this)"
+          license="Free"
+          >Free</span
+        >
+        <span
+          class="license-button button is-small"
+          onclick="document.onLicenseSelected(this)"
+          license="Commercial"
+          >Commercial</span
+        >
       </div>
     </div>
   </div>
