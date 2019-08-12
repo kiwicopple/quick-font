@@ -104,6 +104,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
 document.addEventListener('DOMContentLoaded', () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
+  const $dropdowns = Array.prototype.slice.call(document.querySelectorAll('.dropdown'), 0)
 
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
@@ -120,4 +121,19 @@ document.addEventListener('DOMContentLoaded', () => {
       })
     })
   }
+
+  if ($dropdowns.length > 0) {
+    // Add a click event on each of them
+    $dropdowns.forEach(el => {
+      el.addEventListener('click', () => {
+        el.classList.toggle('is-active')
+      })
+    })
+  }
+})
+
+var dropdown = document.querySelector('.dropdown')
+dropdown.addEventListener('click', function(event) {
+  event.stopPropagation()
+  dropdown.classList.toggle('is-active')
 })
