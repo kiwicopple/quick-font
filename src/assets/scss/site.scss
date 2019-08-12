@@ -84,7 +84,8 @@ body {
 .has-border-none {
   border: none;
 }
-::-moz-selection { /* Code for Firefox */
+::-moz-selection {
+  /* Code for Firefox */
   color: white;
   background: $primary;
 }
@@ -105,14 +106,13 @@ body {
       width: 100%;
       border: none;
       resize: none;
-
     }
   }
 
   pre {
     padding: 15px 15px;
     border-radius: 5px;
-    overflow: scroll;
+    overflow-x: auto;
     background: #484848;
     color: #fff;
     font-size: 0.8rem;
@@ -125,7 +125,6 @@ body {
 
 .hero-body .container {
   max-width: 1000px;
-  
 }
 @media only screen and (max-width: 769px) {
   .hero-body .container .text-column {
