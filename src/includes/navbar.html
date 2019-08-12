@@ -3,16 +3,16 @@
 
   <div class="level-end">
     <div class="level-item" style="justify-content: flex-end;">
-      <div class="dropdown is-hoverable is-right">
+      <div id="menuDropdown" class="dropdown is-hoverable is-right">
         <div class="dropdown-trigger">
-          <a class="button is-white has-text-grey-light">
+          <a class="button is-white has-text-grey-light" onclick="document.toggleElementActive('menuDropdown')">
             •••
           </a>
         </div>
 
         <div class="dropdown-menu  is-boxed m-r-sm">
           <div class="dropdown-content ">
-      @@include('./navitems.html')
+            @@include('./navitems.html')
           </div>
         </div>
       </div>

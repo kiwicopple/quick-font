@@ -91,6 +91,10 @@ document.addEventListener('DOMContentLoaded', function(event) {
     })
     filterFonts()
   }
+  document.toggleElementActive = function (id) {
+    let el = document.getElementById(id)
+    el.classList.toggle('is-active')
+  }
 
   // Attach Listeners
   let filterInput = document.querySelector('#FilterInput')
@@ -104,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function(event) {
 document.addEventListener('DOMContentLoaded', () => {
   // Get all "navbar-burger" elements
   const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0)
-  const $dropdowns = Array.prototype.slice.call(document.querySelectorAll('.dropdown'), 0)
 
   // Check if there are any navbar burgers
   if ($navbarBurgers.length > 0) {
@@ -118,15 +121,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
         el.classList.toggle('is-active')
         $target.classList.toggle('is-active')
-      })
-    })
-  }
-
-  if ($dropdowns.length > 0) {
-    // Add a click event on each of them
-    $dropdowns.forEach(el => {
-      el.addEventListener('click', () => {
-        el.classList.toggle('is-active')
       })
     })
   }
