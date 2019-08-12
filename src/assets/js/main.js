@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(event) {
   document.toggleTab = function(id, tabName) {
-    let block = document.getElementById(id)
+    // let block = document.getElementById(id)
     let tabHandles = document.querySelectorAll(`#${id} .tabs li`)
     let tabs = document.querySelectorAll(`#${id} .tab`)
     Array.prototype.forEach.call(tabHandles, function(el, i) {

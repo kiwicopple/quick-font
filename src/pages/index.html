@@ -19,58 +19,68 @@
 
     @@include('../includes/navbar.html')
     @@include('../includes/modals.html')
-
     @@include('../includes/hero.html')
+    @@include('../includes/filterbar.html')
 
     <div class="section">
-      <div class="container">
-        <div class="columns is-multiline">
-          @@loop('../includes/font-block.html', [
-            {
-              "id": "Avenir", 
-              "title": "Avenir", 
-              "styles": "font-family: 'Avenir';", 
-              "filename": "avenir.css",
-              "license": "Unknown",
-              "purchase": ""
-            },
-            { 
-              "id": "Blokk", 
-              "title": "Blokk", 
-              "styles": "font-family: 'BLOKK';", 
-              "filename": "blokk.css",
-              "license": "Unknown"
-            },
-            { 
-              "id": "Circular", 
-              "title": "Circular", 
-              "styles": "font-family: 'Circular';", 
-              "filename": "circular.css",
-              "license": "Unknown"
-            },
-            { 
-              "id": "Manrope", 
-              "title": "Manrope", 
-              "styles": "font-family: 'Manrope';", 
-              "filename": "manrope.css",
-              "license": "Unknown"
-            },
-            { 
-              "id": "ModernEra", 
-              "title": "Modern Era", 
-              "styles": "font-family: 'Modern Era';", 
-              "filename": "modern_era.css",
-              "license": "Unknown"
-            },
-            { 
-              "id": "UrwGeometric", 
-              "title": "URW Geometric", 
-              "styles": "font-family: 'URW Geometric';", 
-              "filename": "urw_geometric.css",
-              "license": "Unknown"
-            }
-          ])
-        </div>
+      <div class="columns is-multiline">
+        @@loop('../includes/font-block.html', [
+          {
+            "id": "Avenir", 
+            "title": "Avenir", 
+            "styles": "font-family: 'Avenir';", 
+            "filename": "avenir.css",
+            "license": "Commercial",
+            "style": "SANS_SERIF",
+            "filterString": "avenir",
+            "purchase": ""
+          },
+          { 
+            "id": "Blokk", 
+            "title": "Blokk", 
+            "styles": "font-family: 'BLOKK';", 
+            "filename": "blokk.css",
+            "license": "Commercial",
+            "style": "SANS_SERIF",
+            "filterString": "blokk"
+          },
+          { 
+            "id": "Circular", 
+            "title": "Circular", 
+            "styles": "font-family: 'Circular';", 
+            "filename": "circular.css",
+            "license": "Commercial",
+            "style": "SANS_SERIF",
+            "filterString": "circular"
+          },
+          { 
+            "id": "Manrope", 
+            "title": "Manrope", 
+            "styles": "font-family: 'Manrope';", 
+            "filename": "manrope.css",
+            "license": "Commercial",
+            "style": "SANS_SERIF",
+            "filterString": "manrope"
+          },
+          { 
+            "id": "ModernEra", 
+            "title": "Modern Era", 
+            "styles": "font-family: 'Modern Era';", 
+            "filename": "modern_era.css",
+            "license": "Commercial",
+            "style": "SANS_SERIF",
+            "filterString": "modern_era"
+          },
+          { 
+            "id": "UrwGeometric", 
+            "title": "URW Geometric", 
+            "styles": "font-family: 'URW Geometric';", 
+            "filename": "urw_geometric.css",
+            "license": "Commercial",
+            "style": "SANS_SERIF",
+            "filterString": "urw_geometric"
+          }
+        ])
       </div>
     </div>
 

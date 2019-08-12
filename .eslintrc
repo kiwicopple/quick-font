@@ -9,8 +9,9 @@
   },
   "extends": "eslint:recommended",
   "rules": {
-    "quotes": ["error", "single"],
-    "semi": ["error", "never"],
+    "quotes": ["warn", "single"],
+    "semi": ["warn", "never"],
+    "no-unused-vars": ["warn"],
     "no-console": "off"
   }
 }

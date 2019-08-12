@@ -71,6 +71,9 @@ html,
 body {
   background: #fdfdfd;
 }
+.has-background {
+  background: #fdfdfd;
+}
 .has-shadow {
   box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
   transition: box-shadow 0.3s;
@@ -118,5 +121,17 @@ body {
 @media only screen and (max-width: 769px) {
   .hero-body .container .text-column {
     text-align: center;
+  }
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+}
+
+.modal-content {
+  .box {
+    max-height: 100%;
+    overflow: scroll;
   }
 }

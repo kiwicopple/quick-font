@@ -1,36 +1,19 @@
-<nav class="navbar has-soft-shadow" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="/">
-      <img src="/assets/img/logo.svg" alt="Quick, Font!" />
-    </a>
+<nav class="level has-background p-sm" role="navigation" aria-label="main navigation">
+  <div class="level-start"></div>
 
-    <a
-      role="button"
-      class="navbar-burger burger navbar-item has-text-grey-light is-hidden-desktop"
-      aria-label="menu"
-      aria-expanded="false"
-      data-target="mainNav"
-      >
-      •••
-    </a>
-  </div>
-
-  <div class="navbar-menu" id="mainNav">
-    <div class="navbar-start"></div>
-
-    <div class="navbar-end">
-      <div class="navbar-item has-dropdown is-hoverable">
-        <a class="navbar-link is-arrowless has-text-grey-light is-hidden-touch">
-          •••
-        </a>
-
-        <div class="navbar-dropdown is-right is-boxed m-r-sm">
-          <a class="navbar-item" onclick="document.showModal('AboutModal')">
-            About
+  <div class="level-end">
+    <div class="level-item" style="justify-content: flex-end;">
+      <div class="dropdown is-hoverable is-right">
+        <div class="dropdown-trigger">
+          <a class="button is-white has-text-grey-light">
+            •••
           </a>
-          <a class="navbar-item" onclick="document.showModal('DisclaimerModal')">
-            Disclaimer
-          </a>
+        </div>
+
+        <div class="dropdown-menu  is-boxed m-r-sm">
+          <div class="dropdown-content ">
+      @@include('./navitems.html')
+          </div>
         </div>
       </div>
     </div>
