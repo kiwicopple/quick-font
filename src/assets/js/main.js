@@ -30,6 +30,26 @@ document.addEventListener('DOMContentLoaded', function(event) {
       el.classList.add('is-active')
     })
   }
+  var filterFonts = function(e) {
+    let f = e.target.value
+    let blocks = document.querySelectorAll('.FontBlockCol')
+    if (f.length) {
+      let reg = new RegExp(f, 'gi')
+      Array.prototype.forEach.call(blocks, function(el) {
+        let v = el.getAttribute('filterString')
+        if (v.search(reg) >= 0) el.classList.remove('is-hidden')
+        else el.classList.add('is-hidden')
+      })
+    } else {
+      Array.prototype.forEach.call(blocks, function(el) {
+        el.classList.remove('is-hidden')
+      })
+    }
+  }
+
+  // Attach Listeners
+  let filterInput = document.querySelector('#FilterInput')
+  if (filterInput) filterInput.addEventListener('keyup', filterFonts)
 })
 
 document.addEventListener('DOMContentLoaded', () => {
